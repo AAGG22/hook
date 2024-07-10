@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#like-container {
+    display: flex;
+    align-items: center;
+}
+
+#like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#like-button:hover {
+    transform: scale(1.1);
+}
+
+#like-button svg {
+    fill: #ccc;
+    transition: fill 0.2s;
+}
+
+#like-button.liked svg {
+    fill: #ff4136;
+}
+
+#like-count {
+    margin-left: 10px;
+    font-size: 18px;
+}
